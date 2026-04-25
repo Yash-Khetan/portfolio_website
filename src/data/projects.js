@@ -1,3 +1,4 @@
+
 export const projects = [
   {
     id: 1,
@@ -5,8 +6,8 @@ export const projects = [
     date: "Jan 2026 – Feb 2026",
     description: "Engineered asynchronous payment processing decoupled from request lifecycle using Redis queues. Implemented idempotent transactions with state transitions (pending → processing → success/failure) and JWT-based role access control.",
     stack: ["Node.js", "Express.js", "MongoDB", "Redis", "BullMQ", "JWT"],
-    githubUrl: "#",
-    liveUrl: "#"
+    githubUrl: import.meta.env.VITE_UPAY_GITHUB,
+    liveUrl: import.meta.env.VITE_UPAY_URL
   },
   {
     id: 2,
@@ -14,7 +15,7 @@ export const projects = [
     date: "Feb 2026 – Mar 2026",
     description: "Built backend infrastructure supporting real-time matchmaking, session lifecycle management, and live code interaction using WebSockets. REST APIs for submissions, scoring logic, and user management.",
     stack: ["Node.js", "Express.js", "MongoDB", "WebSockets"],
-    githubUrl: "#"
+    githubUrl: import.meta.env.VITE_CODE_DUELS_GITHUB
   },
   {
     id: 3,
@@ -22,8 +23,8 @@ export const projects = [
     date: "Apr 2026 – Present",
     description: "Full-stack RAG platform for real-time natural language querying over PDFs using semantic search and Gemini LLM. Built PDF parsing, chunking, embedding, and cosine similarity retrieval pipeline with streaming responses.",
     stack: ["Node.js", "PostgreSQL", "Gemini API", "Vercel", "Render", "JWT"],
-    githubUrl: "#",
-    liveUrl: "#"
+    githubUrl: import.meta.env.VITE_DOCUMIND_GITHUB,
+    liveUrl: import.meta.env.VITE_DOCUMIND_URL
   },
   {
     id: 4,
@@ -31,6 +32,6 @@ export const projects = [
     date: "2026",
     description: "A CLI tool that analyzes GitHub activity and converts it into actionable insights. Fetches real-time events while using AI to generate recruiter-style summaries. Delivers clean terminal outputs with seamless Gemini AI integration.",
     stack: ["Node.js", "Commander.js", "Axios", "GitHub API", "Gemini AI"],
-    githubUrl: "#"
+    githubUrl: import.meta.env.VITE_DEVINSPECT_GITHUB
   }
 ];
