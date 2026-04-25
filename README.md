@@ -1,16 +1,75 @@
-# React + Vite
+# Yash Khetan - Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, interactive personal portfolio website showcasing my projects, skills, and experience as a full-stack developer. Designed with a clean aesthetic and engaging animations to provide an excellent user experience.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Modern & Responsive UI**: Fully responsive design built with [Tailwind CSS](https://tailwindcss.com/).
+- **Smooth Animations**: High-quality page transitions and micro-interactions using [Framer Motion](https://www.framer.com/motion/).
+- **Interactive 3D Elements**: Features an animated 3D avatar powered by [React Three Fiber](https://docs.pmnd.rs/react-three-fiber) and Drei.
+- **Dynamic Content**: Easy to update projects, skills, and contact information.
+- **Dark/Light Mode**: Seamless theming support for user preference.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework**: [React 19](https://react.dev/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/) & [Lottie React](https://lottiereact.com/)
+- **3D Rendering**: [Three.js](https://threejs.org/) & [@react-three/fiber](https://docs.pmnd.rs/react-three-fiber)
+- **Icons**: [React Icons](https://react-icons.github.io/react-icons/)
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To run this project locally, follow these steps:
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/Yash-Khetan/portfolio_website.git
+cd portfolio_website
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Configure Environment Variables
+Create a `.env` file in the root of your project. Vite requires environment variables to be prefixed with `VITE_` to expose them to the client-side code.
+
+Add your links and configuration:
+```env
+# Contact & Socials
+VITE_GITHUB_URL=https://github.com/YourUsername
+VITE_LINKEDIN_URL=https://linkedin.com/in/YourUsername
+VITE_GMAIL=your.email@gmail.com
+
+# Project Live URLs
+VITE_UPAY_URL=https://your-upay-link.vercel.app/
+VITE_DOCUMIND_URL=https://your-documind-link.vercel.app/
+
+# Project GitHub Repository URLs
+VITE_UPAY_GITHUB=https://github.com/YourUsername/Upay
+VITE_DOCUMIND_GITHUB=https://github.com/YourUsername/DocuMind
+VITE_CODE_DUELS_GITHUB=https://github.com/YourUsername/code-duels
+VITE_DEVINSPECT_GITHUB=https://github.com/YourUsername/Dev-Inspect-
+```
+
+### 4. Start the development server
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser to view the application.
+
+## 📦 Build for Production
+
+To create an optimized production build:
+```bash
+npm run build
+```
+The compiled assets will be available in the `dist` folder, ready to be deployed.
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
