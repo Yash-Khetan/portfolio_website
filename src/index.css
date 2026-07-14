@@ -15,3 +15,98 @@
     @apply font-heading font-bold text-black dark:text-white transition-colors duration-300;
   }
 }
+
+/* ── Preloader ── */
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #09090b;
+}
+
+.preloader-text {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  color: #fff;
+  letter-spacing: -0.04em;
+}
+
+/* ── Currently Building — Featured Card ── */
+.currently-building-card {
+  position: relative;
+  background: #0c0c0e;
+  border: 1px solid rgba(255, 213, 79, 0.15);
+  border-radius: 1.75rem;
+  padding: 2.5rem;
+  box-shadow:
+    0 0 0 1px rgba(255, 213, 79, 0.06),
+    0 0 40px -12px rgba(255, 213, 79, 0.08);
+  transition:
+    box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.currently-building-card:hover {
+  border-color: rgba(255, 213, 79, 0.35);
+  box-shadow:
+    0 0 0 1px rgba(255, 213, 79, 0.12),
+    0 0 60px -8px rgba(255, 213, 79, 0.15),
+    0 20px 60px -15px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 640px) {
+  .currently-building-card {
+    padding: 1.75rem;
+    border-radius: 1.25rem;
+  }
+}
+
+/* ── Glass Card (Testimonials) ── */
+.glass-card {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.5rem;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  border-color: rgba(255, 213, 79, 0.2);
+  box-shadow: 0 0 30px -10px rgba(255, 213, 79, 0.1);
+}
+
+/* ── Testimonials Carousel ── */
+.testimonials-track {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding-bottom: 1rem;
+}
+
+.testimonials-track::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonials-track > * {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+
+/* ── Utility: no-scrollbar ── */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
