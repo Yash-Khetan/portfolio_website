@@ -8,6 +8,8 @@ import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Achievements from './components/Achievements';
 import Education from './components/Education';
+import Blogs from './components/Blogs';
+import VideoEdits from './components/VideoEdits';
 import CurrentlyBuilding from './components/CurrentlyBuilding';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
@@ -61,6 +63,8 @@ function App() {
           <Skills />
           <Achievements />
           <Education />
+          <Blogs />
+          <VideoEdits />
           <CurrentlyBuilding />
           <Testimonials />
         </main>

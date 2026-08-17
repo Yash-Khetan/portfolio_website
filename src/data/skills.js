@@ -1,22 +1,92 @@
+import {
+  FiDatabase, FiServer, FiLock, FiSearch, FiLayers, FiCpu, FiEye,
+  FiGrid, FiTerminal, FiCode, FiBox, FiGlobe, FiShield, FiZap,
+  FiCoffee, FiHash, FiPackage, FiHardDrive, FiTool, FiMonitor,
+} from 'react-icons/fi';
+
 export const skills = [
   {
     category: "Languages",
-    items: ["Java", "JavaScript", "Python", "C++", "SQL"]
+    emoji: "💬",
+    priority: "primary",
+    items: [
+      { name: "Java", icon: FiCoffee, bg: "#ED8B00" },
+      { name: "Python", icon: FiCode, bg: "#3776AB" },
+      { name: "JavaScript", icon: FiCode, bg: "#F7DF1E", dark: true },
+      { name: "TypeScript", icon: FiCode, bg: "#3178C6" },
+      { name: "C++", icon: FiHash, bg: "#00599C" },
+      { name: "SQL", icon: FiDatabase, bg: "#E48900" },
+    ],
   },
   {
     category: "Backend",
-    items: ["Spring Boot", "Node.js", "Express.js", "REST APIs"]
+    emoji: "⚙️",
+    priority: "primary",
+    items: [
+      { name: "Spring Boot", icon: FiPackage, bg: "#6DB33F" },
+      { name: "Node.js", icon: FiServer, bg: "#339933" },
+      { name: "Express.js", icon: FiServer, bg: "#303030" },
+      { name: "FastAPI", icon: FiZap, bg: "#009688" },
+      { name: "REST APIs", icon: FiServer, bg: "#E65100" },
+      { name: "JWT Auth", icon: FiLock, bg: "#D500F9" },
+    ],
   },
   {
-    category: "Databases",
-    items: ["PostgreSQL", "MongoDB", "Redis"]
+    category: "Databases & Storage",
+    emoji: "🗄️",
+    priority: "primary",
+    items: [
+      { name: "PostgreSQL", icon: FiDatabase, bg: "#4169E1" },
+      { name: "MongoDB", icon: FiDatabase, bg: "#47A248" },
+      { name: "Redis", icon: FiHardDrive, bg: "#DC382D" },
+      { name: "SQLite", icon: FiDatabase, bg: "#003B57" },
+      { name: "Supabase", icon: FiDatabase, bg: "#3ECF8E", dark: true },
+    ],
   },
   {
-    category: "Tools",
-    items: ["Git", "Postman", "IntelliJ", "VS Code"]
+    category: "AI / Machine Learning",
+    emoji: "🤖",
+    priority: "primary",
+    items: [
+      { name: "RAG", icon: FiZap, bg: "#FF6D00" },
+      { name: "Semantic Search", icon: FiSearch, bg: "#7C4DFF" },
+      { name: "Embeddings", icon: FiLayers, bg: "#00BFA5" },
+      { name: "Sentence Transformers", icon: FiCpu, bg: "#FF9100" },
+      { name: "OCR", icon: FiEye, bg: "#00ACC1" },
+      { name: "Tesseract", icon: FiGrid, bg: "#1565C0" },
+      { name: "NumPy", icon: FiCode, bg: "#4DABCF" },
+      { name: "Pandas", icon: FiCode, bg: "#150458" },
+      { name: "DBSCAN", icon: FiGrid, bg: "#E91E63" },
+    ],
   },
   {
-    category: "Concepts",
-    items: ["DSA", "OOP", "System Design", "ACID", "JWT Auth"]
-  }
+    category: "Infrastructure & Tools",
+    emoji: "🛠️",
+    priority: "secondary",
+    items: [
+      { name: "Docker", icon: FiPackage, bg: "#2496ED" },
+      { name: "Git", icon: FiCode, bg: "#F05032" },
+      { name: "Postman", icon: FiTool, bg: "#FF6C37" },
+      { name: "VS Code", icon: FiMonitor, bg: "#007ACC" },
+      { name: "IntelliJ IDEA", icon: FiCode, bg: "#FE315D" },
+      { name: "Linux", icon: FiTerminal, bg: "#FCC624", dark: true },
+      { name: "WSL", icon: FiTerminal, bg: "#4EAA25" },
+      { name: "Vercel", icon: FiGlobe, bg: "#171717" },
+    ],
+  },
+  {
+    category: "Core Concepts",
+    emoji: "🧠",
+    priority: "secondary",
+    items: [
+      { name: "DSA", icon: FiCode, bg: "#00C853" },
+      { name: "OOP", icon: FiBox, bg: "#6200EA" },
+      { name: "DBMS", icon: FiDatabase, bg: "#0091EA" },
+      { name: "Operating Systems", icon: FiCpu, bg: "#FF6F00" },
+      { name: "Computer Networks", icon: FiGlobe, bg: "#00BCD4" },
+      { name: "System Design", icon: FiLayers, bg: "#AA00FF" },
+      { name: "API Design", icon: FiServer, bg: "#2962FF" },
+      { name: "ACID Transactions", icon: FiShield, bg: "#DD2C00" },
+    ],
+  },
 ];

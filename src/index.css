@@ -35,6 +35,24 @@
   letter-spacing: -0.04em;
 }
 
+/* ── Particle Canvas ── */
+.particle-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ── Cursor Blink ── */
+@keyframes cursor-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-cursor-blink {
+  animation: cursor-blink 0.8s ease-in-out infinite;
+}
+
 /* ── Currently Building — Featured Card ── */
 .currently-building-card {
   position: relative;
@@ -109,4 +127,30 @@
 }
 .no-scrollbar::-webkit-scrollbar {
   display: none;
+}
+
+/* ── Section Reveal Animation ── */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.6s ease-out forwards;
+}
+
+/* ── Floating Animation ── */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
 }

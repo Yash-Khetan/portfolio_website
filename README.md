@@ -35,25 +35,11 @@ npm install
 ```
 
 ### 3. Configure Environment Variables
-Create a `.env` file in the root of your project. Vite requires environment variables to be prefixed with `VITE_` to expose them to the client-side code.
-
-Add your links and configuration:
-```env
-# Contact & Socials
-VITE_GITHUB_URL=https://github.com/YourUsername
-VITE_LINKEDIN_URL=https://linkedin.com/in/YourUsername
-VITE_GMAIL=your.email@gmail.com
-
-# Project Live URLs
-VITE_UPAY_URL=https://your-upay-link.vercel.app/
-VITE_DOCUMIND_URL=https://your-documind-link.vercel.app/
-
-# Project GitHub Repository URLs
-VITE_UPAY_GITHUB=https://github.com/YourUsername/Upay
-VITE_DOCUMIND_GITHUB=https://github.com/YourUsername/DocuMind
-VITE_CODE_DUELS_GITHUB=https://github.com/YourUsername/code-duels
-VITE_DEVINSPECT_GITHUB=https://github.com/YourUsername/Dev-Inspect-
+Copy the example env file and fill in your own values:
+```bash
+cp .env.example .env
 ```
+Open `.env` and add your personal URLs and credentials. See `.env.example` for all required variables.
 
 ### 4. Start the development server
 ```bash

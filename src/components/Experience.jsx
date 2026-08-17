@@ -42,11 +42,18 @@ export default function Experience() {
                 </span>
               </div>
 
-              <p className="inline-block px-3 py-1 bg-gray-200 dark:bg-zinc-800/60 rounded-md text-xs font-semibold text-gray-600 dark:text-zinc-400 mb-5 font-sans transition-colors duration-300">
-                {exp.date}
-              </p>
+              <div className="flex flex-wrap items-center gap-3 mb-5">
+                <span className="inline-block px-3 py-1 bg-gray-200 dark:bg-zinc-800/60 rounded-md text-xs font-semibold text-gray-600 dark:text-zinc-400 font-sans transition-colors duration-300">
+                  {exp.date}
+                </span>
+                {exp.location && (
+                  <span className="text-xs text-gray-400 dark:text-zinc-500 font-sans">
+                    {exp.location}
+                  </span>
+                )}
+              </div>
 
-              <ul className="space-y-2.5">
+              <ul className="space-y-2.5 mb-5">
                 {exp.bullets.map((bullet, i) => (
                   <li
                     key={i}
@@ -57,6 +64,20 @@ export default function Experience() {
                   </li>
                 ))}
               </ul>
+
+              {/* Tech Stack */}
+              {exp.tech && (
+                <div className="flex flex-wrap gap-1.5">
+                  {exp.tech.map((t, i) => (
+                    <span
+                      key={i}
+                      className="px-2.5 py-1 bg-gray-100 dark:bg-zinc-800/60 text-gray-600 dark:text-zinc-400 rounded-md text-xs font-medium font-sans transition-colors duration-300"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
+              )}
             </motion.div>
           ))}
         </div>
