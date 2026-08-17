@@ -25,5 +25,3 @@ dist-ssr
 .env
 
 src/components/Testimonials.jsx
-public/*
-src/data/*
